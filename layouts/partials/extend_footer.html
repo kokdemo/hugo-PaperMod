@@ -1,3 +1,15 @@
 {{- /* Footer custom content area start */ -}}
 {{- /*     Insert any custom code web-analytics, resources, etc. here */ -}}
+
+{{- if eq .Kind "page" }}
+<script>
+Waline({
+      el: "{{.Site.Params.waline.el}}",
+      visitor: "{{.Site.Params.waline.visitor}}",
+      dark: "{{.Site.Params.waline.dark}}",
+      serverURL: "{{.Site.Params.waline.serverURL}}",
+    });
+</script>
+{{- end }}
+
 {{- /* Footer custom content area end */ -}}

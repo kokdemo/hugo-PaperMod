@@ -1,4 +1,10 @@
 {{- /* Head custom content area start */ -}}
 {{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the <head></head> section of every page. */ -}}
 {{- /*     Can be overwritten by partial with the same name in the global layouts. */ -}}
+<script data-ad-client="{{.Site.Params.Adsense.client}}" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+{{- if eq .Kind "page" }}
+<script src="//cdn.jsdelivr.net/npm/@waline/client@1/dist/Waline.min.js"></script>
+{{- end }}
+
 {{- /* Head custom content area end */ -}}
