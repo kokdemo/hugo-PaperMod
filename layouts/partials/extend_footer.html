@@ -5,10 +5,9 @@
 <script>
 Waline({
       el: "{{.Site.Params.waline.el}}",
-      visitor: "{{.Site.Params.waline.visitor}}",
+      pageview: "{{.Site.Params.waline.pageview}}",
       dark: "{{.Site.Params.waline.dark}}",
-      serverURL: "{{.Site.Params.waline.serverURL}}",
-      pageview:true
+      serverURL: "{{.Site.Params.waline.serverURL}}"
     });
 </script>
 {{- end }}
